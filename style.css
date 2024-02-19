@@ -23,15 +23,18 @@ body {
     transition: 1s;
 }
 
-.birthdayCard:hover{
+.birthdayCard:hover,
+.birthdayCard:active{
     transform: perspective(2500px) rotate(5deg);
 }
 
-.birthdayCard:hover .cardFront {
+.birthdayCard:hover .cardFront ,
+.birthdayCard:active .cardFront{
     transform: rotateY(-160deg);
 }
 
-.birthdayCard:hover .title.front> 
+.birthdayCard:hover .title.front,
+.birthdayCard:active .title.front> 
 {
     visibility: hidden;
 }
