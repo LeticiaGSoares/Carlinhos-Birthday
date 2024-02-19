@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: rgb(75, 70, 70);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: no-repeat center url(https://uswalldecor.com/cdn/shop/products/RMK11063WP-dark-side-star-wars-peel-and-stick-wallpaper-gray-black.jpg?v=1576008986);
+    background-size: cover;
+}
+
+.birthdayCard{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+}
+
+.birthdayCard:hover{
+    transform: perspective(2500px) rotate(5deg);
+}
+
+.birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .title.front> 
+{
+    visibility: hidden;
+}
+
+.cardFront{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width:250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+    30px 0 50px rgba(0, 0, 0, 0.4);
+    transition: 3s;
+}
+.cardFront>img{
+    width: 50%;
+
+}
+
+.title.front{
+    text-align: center;
+    margin: 30px;
+}
+
+.cardInside{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    z-index: -1;
+    left: 0;
+    top:0;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+.text{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#playVideo{
+    width: 200px;
+    padding: 10px 30px;
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#playVideo:hover{
+    background-color: brown;
+}
+
+.signature{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.video{
+    display: none;
+    border: 10px solid white;
+}
