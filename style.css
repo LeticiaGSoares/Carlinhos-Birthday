@@ -64,7 +64,7 @@ body {
 }
 
 .cardInside{
-    font-size: small;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     justify-content: center;
